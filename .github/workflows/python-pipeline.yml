@@ -22,7 +22,7 @@ jobs:
       - name: Lint the code
         run: |
           flake8 hello.py
-          lint hello.py
+          pylint hello.py
 
       - name: Test the script
         run: python hello.py | grep -i hello || exit 1
